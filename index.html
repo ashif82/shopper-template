@@ -7,36 +7,44 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+         body{
+            font-family: arial;
+             overflow-x: hidden; 
+        }
+         .shopOption{
+        margin-bottom:85px ;
+       }
+       .card{
+        background-color: rgba(255, 0, 0, 0);
+        font-family: arial;
+        border: none;
+        margin-bottom: 30px;
+       }
+
+
+    </style>
 </head>
 <body>
     <header>
- 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light  mb-3">
-         
-        
         <div>
           <div class="navbar-brand fw-bold fs-3">Shopper</div>
         </div>
          <button data-bs-target="#freeShiping2" data-bs-toggle="collapse" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-     
-         
-     
-     
+    
          <div class="navbar-collapse collapse "id="freeShiping2">
              <ul class="navbar-nav mx-auto ">
                  <li class="nav-item  "><a class="nav-link" href="" >Home</a>
-                 
                  </li>
                  <li class="nav-item"><a class="nav-link" href="">Catalog</a>
-                
-                 
                  </li>
                  <li class="nav-item "><a class="nav-link"data-bs-toggle="dropdown" href="">Shop</a></li>
                  <li class="nav-item"><a class="nav-link"href="">Page</a></li>
                  <li class="nav-item"><a class="nav-link"href="">Blog</a></li>
-                 <li class="nav-item "><a class="nav-link" href="">Docs</a></li>
-                 
+                 <li class="nav-item "><a class="nav-link" href="">Docs</a></li>   
              </ul>
+
              <div>
                  <ul class="list-unstyled d-flex ">
                     
@@ -45,16 +53,63 @@
                      <li><span class="bi bi-heart ms-2" ></span></li>
                      <li><span class="bi bi-cart ms-2 me-4" ></span></li>
                  </ul>
-             </div>
-            
+             </div> 
          </div>
-         
-     
-         
-     
-     
         </nav>
-        
         </header>
+
+        <aside class="bg-dark text-white py-2 text-center">
+            <h6><span class="bi bi-lightning-fill text-warning"></span>Happy Holiday Deals on Everything <span class="bi bi-lightning-fill text-warning"></span></h6>
+          </aside>
+
+          <section class="mt-2">
+            <div class="d-flex ">
+             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-end align-items-center flex-column " style="background-image: url(../shopper-templete/shoperimg/womenimg.jpg); height:400px;background-size: cover;">
+                
+                  <div class="card text-white  text-center">
+                     <div class="card-body mt-auto shopOption py-8">
+                        
+         
+                         <h1 class="fw-bold">women</h1>
+                     </div>
+                     <div class="card-body mt-auto py-8">
+                         <a id="shopwomenbtn" class="text-decoration-none bg-light py-3 px-5 text-dark  " href="">Shop women 
+                             <span class=" ms-2 bi bi-arrow-right text-dark"></span>
+                         </a>
+         
+                        
+                     </div>
+                  </div>
+                 
+             </div>
+             <div class="col-12 col-md-6 col-lg-4 d-flex menn justify-content-end align-items-center flex-column " style="background-image: url(../shopper-templete/shoperimg/men.jpg); height:400px;background-size: cover;">
+                
+                  <div class="card card-lg text-white text-center">
+                     <div class="card-body shopOption">
+                         <h1>Men</h1>
+                     </div>
+                     <div class="card-body bg-light ">
+                         <a class=" text-dark text-decoration-none py-3 px-5" href="">Shop men
+                             <span class=" ms-2 bi bi-arrow-right text-dark" ></span>
+                         </a>
+                     </div>
+                  </div>
+                 
+             </div>
+             <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-end align-items-center flex-column " style="background-image: url(../shopper-templete/shoperimg/kid.jpg); height:400px;background-size: cover;">
+                <div class="card card-lg text-light text-center ">
+                 <div class="card-body  shopOption">
+                     <h1>Kid</h1>
+                 </div>
+                 <div class="card-body">
+                     <a class="text-decoration-none bg-light text-dark py-3 px-5 " href="">Shop Kid<span class=" ms-2 bi bi-arrow-right text-dark"></span></a>
+                 </div>
+                </div>
+                 
+             </div>
+             <div class="men"></div>
+             <div class="kid"></div>
+            </div>
+         
 </body>
 </html> 
