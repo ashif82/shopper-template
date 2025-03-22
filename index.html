@@ -7,6 +7,65 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+         function HandleMouseOver(tab){
+            var ProductId="product5-"+ tab
+           var product5= document.getElementById(ProductId);
+           product5.src="../shopper-templete/shoperimg/product-120 (1).jpg";
+           
+        }
+        function HandleMouseOut(tab){
+            var ProductId="product5-"+ tab
+            var product5= document.getElementById(ProductId);
+            product5.src="../shopper-templete/shoperimg/product-5.jpg";
+        }
+
+        function HandleMouseOver1(tab){
+            var ProductId="product6-"+ tab
+            var product6= document.getElementById(ProductId);
+            product6.src="../shopper-templete/shoperimg/product-121 (1).jpg";
+           
+        }
+        function HandleMouseOut1(tab){
+            var ProductId="product6-"+ tab
+            var product6= document.getElementById(ProductId);
+            product6.src="../shopper-templete/shoperimg/product-6.jpg";
+        }
+
+        function HandleMouseOver2(tab){
+            var ProductId="product7-"+ tab
+            var product7= document.getElementById(ProductId);
+            product7.src="../shopper-templete/shoperimg/product-122 (1).jpg";
+           
+        }
+        function HandleMouseOut2(tab){
+            var ProductId="product7-"+ tab
+            var product7= document.getElementById(ProductId);
+            product7.src="../shopper-templete/shoperimg/product-7.jpg";
+        }
+        function HandleMouseOver10(tab){
+            var ProductId="product10-"+ tab
+            var product10= document.getElementById(ProductId);
+            product10.src="../shopper-templete/shoperimg/product-123 (1).jpg";
+           
+        }
+        function HandleMouseOut10(tab){
+            var ProductId="product10-"+ tab
+            var product10= document.getElementById(ProductId);
+            product10.src="../shopper-templete/shoperimg/product-10.jpg";
+        }
+        function HandleMouseOver11(tab){
+            var ProductId="product11-"+ tab
+            var product11= document.getElementById(ProductId);
+            product11.src="../shopper-templete/shoperimg/product-124 (1).jpg";
+           
+        }
+        function HandleMouseOut11(tab){
+            var ProductId="product11-"+ tab
+            var product11= document.getElementById(ProductId);
+           product11.src="../shopper-templete/shoperimg/product-11.jpg";
+        }
+    </script>
     <style>
          body{
             font-family: arial;
@@ -57,6 +116,53 @@
         background-size:cover;
         background-position:center;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       .card-body li{
+           
+           list-style: none;
+       }
+       .product1{
+        background-image: url(../project/shoperimg/product-5.jpg);
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+       }
+
+       .All-top-seller a{
+        text-decoration:none;
+        color:black;
+        font-family: arial;
+       }
+
+       .shoes-parent{
+position: relative;
+       }
+       .shoes-child{
+        position: absolute;
+        top: -44px;
+        left: 44px;
+        background-color: white;
+        padding: 5px 5px;
+        border-radius: 50%;
+       }
+
+       .shoes-childs{
+        position: absolute;
+        top: -44px;
+        left: 89px;
+        background-color: white;
+        padding: 5px 5px;
+        border-radius: 50%;
+       }
+
+       .shoes-childss{
+        position: absolute;
+        top: -44px;
+        left: 144px;
+        background-color: white;
+        padding: 5px 5px;
+        border-radius: 50%;
        }
 
 
@@ -230,6 +336,360 @@
                 <a class="text-decoration-none fw-bold text-white " href="">Shop Now <span class="bi bi-arrow-right"></span></a>
              </div>
           </div>
+       </div>
+
+       <div class="text-center fs-2 fw-bold">Top month Sellers</div>
+
+       <div class="d-flex justify-content-center align-items-center mb-4">
+        <ul class="nav nav-tabs">
+            <li class="nav-item "><a class="nav-link active" data-bs-toggle="tab" href="#Women">Women</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#men">men</a></li>
+            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#kid">kids</a></li>
+           </ul>
+       </div>
+
+       <div class="tab-content">
+        <div class="tab-pane active"id="Women">
+           <div class="row">
+            <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img id="product5-Women" onmouseout="HandleMouseOut('Women')" onmouseover="HandleMouseOver('Women')" src="../shopper-templete/shoperimg/product-5.jpg" class="card-img-top" alt=""> 
+
+                   
+                </div>
+                <div class="card-body">
+                    <ul class="All-top-seller">
+                        <li><a class="text-secondary" href="">Shoes</a></li>
+                        <li><a href="">Cotton floral print Dress</a></li>
+                        <li><a class="text-secondary" href="">$40.00</a></li>
+                       </ul>   
+                </div>
+               </div>
+        
+               <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img id="product6-Women" onmouseout="HandleMouseOut1('Women')" onmouseover="HandleMouseOver1('Women')" src="../shopper-templete/shoperimg/product-6.jpg" class="card-img-top" alt="">   
+                    
+                </div>
+                <div class="card-body">
+                    <ul class="All-top-seller">
+                        <li><a href="">Dresses</a></li>
+                        <li><a href="">Cotton floral print Dress</a></li>
+                        <li><a href="">$40.00</a></li>
+                       </ul>
+                </div>
+               </div>
+        
+               <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img id="product7-Women" onmouseout="HandleMouseOut2('Women')" onmouseover="HandleMouseOver2('Women')" src="../shopper-templete/shoperimg/product-7.jpg" class="card-img-top" alt=""> 
+                    
+                </div>
+                <div class="card-body">
+                   <ul class="All-top-seller">
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">
+                        Leather Sneakers</a></li>
+                    <li><a href="">$85.00 $85.00</a></li>
+                   </ul>
+                </div>
+               </div>
+        
+               <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img src="../shopper-templete/shoperimg/product-8.jpg" class="card-img-top" alt="">   
+                </div>
+                <div class="card-body">
+                    <ul class="All-top-seller">
+                        <li><a href="">Dresses</a></li>
+                        <li><a href="">Cotton floral print Dress</a></li>
+                        <li><a href="">$40.00</a></li>
+                       </ul>
+                </div>
+               </div>
+        
+               <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img src="../shopper-templete/shoperimg/product-9.jpg" class="card-img-top" alt="">   
+                </div>
+                <div class="card-body">
+                    <ul class="All-top-seller">
+                        <li><a href="">Dresses</a></li>
+                        <li><a href="">Cotton floral print Dress</a></li>
+                        <li><a href="">$40.00</a></li>
+                       </ul>
+                </div>
+               </div>
+              
+               <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img id="product10-Women" onmouseout="HandleMouseOut10('Women')" onmouseover="HandleMouseOver10('Women')" src="../shopper-templete/shoperimg/product-10.jpg" class="card-img-top" alt="">  
+                    
+                </div>
+                <div class="card-body">
+                    <ul class="All-top-seller">
+                        <li><a href="">Dresses</a></li>
+                        <li><a href="">Cotton floral print Dress</a></li>
+                        <li><a href="">$40.00</a></li>
+                       </ul>
+                </div>
+               </div>
+        
+               <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img id="product11-Women" onmouseout="HandleMouseOut11('Women')" onmouseover="HandleMouseOver11('Women')" src="../shopper-templete/shoperimg/product-11.jpg" class="card-img-top" alt=""> 
+                    
+                </div>
+                <div class="card-body">
+                    <ul class="All-top-seller">
+                        <li><a href="">Dresses</a></li>
+                        <li><a href="">Cotton floral print Dress</a></li>
+                        <li><a href="">$40.00</a></li>
+                       </ul>
+                </div>
+               </div>
+        
+               <div class="col-6 col-md-6 col-lg-3">
+                <div class="card-img">
+                    <img  src="../shopper-templete/shoperimg/product-12.jpg" class="card-img-top" alt="">   
+                </div>
+                <div class="card-body">
+                    <ul class="All-top-seller">
+                        <li><a href="">Dresses</a></li>
+                        <li><a href="">Cotton floral print Dress</a></li>
+                        <li><a href="">$40.00</a></li>
+                       </ul>
+                </div>
+               </div>
+           </div>
+        </div>
+        <div class="tab-pane"id="men">
+            <div class="row">
+             <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img id="product5-men" onmouseout="HandleMouseOut('men')" onmouseover="HandleMouseOver('men')" src="../shopper-templete/shoperimg/product-5.jpg" class="card-img-top" alt="">   
+                 </div>
+                 <div class="card-body">
+                     <ul class="All-top-seller">
+                         <li><a class="text-secondary" href="">Shoes</a></li>
+                         <li><a href="">Cotton floral print Dress</a></li>
+                         <li><a class="text-secondary" href="">$40.00</a></li>
+                        </ul>  
+                 </div>
+                </div>
+         
+                <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img id="product6-men" onmouseout="HandleMouseOut1('men')" onmouseover="HandleMouseOver1('men')" src="../shopper-templete/shoperimg/product-6.jpg" class="card-img-top" alt="">   
+                     
+                 </div>
+                 <div class="card-body">
+                     <ul class="All-top-seller">
+                         <li><a href="">Dresses</a></li>
+                         <li><a href="">Cotton floral print Dress</a></li>
+                         <li><a href="">$40.00</a></li>
+                        </ul>
+                 </div>
+                </div>
+         
+                <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img id="product7-men" onmouseout="HandleMouseOut2('men')" onmouseover="HandleMouseOver2('men')" src="../shopper-templete/shoperimg/product-7.jpg" class="card-img-top" alt="">    
+                 </div>
+                 <div class="card-body">
+                    <ul class="All-top-seller">
+                     <li><a href="">Shoes</a></li>
+                     <li><a href="">
+                         Leather Sneakers</a></li>
+                     <li><a href="">$85.00 $85.00</a></li>
+                    </ul>
+                 </div>
+                </div>
+         
+                <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img src="../shopper-templete/shoperimg/product-8.jpg" class="card-img-top" alt="">   
+                 </div>
+                 <div class="card-body">
+                     <ul class="All-top-seller">
+                         <li><a href="">Dresses</a></li>
+                         <li><a href="">Cotton floral print Dress</a></li>
+                         <li><a href="">$40.00</a></li>
+                        </ul>
+                 </div>
+                </div>
+         
+                <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img src="../shopper-templete/shoperimg/product-9.jpg" class="card-img-top" alt="">   
+                 </div>
+                 <div class="card-body">
+                     <ul class="All-top-seller">
+                         <li><a href="">Dresses</a></li>
+                         <li><a href="">Cotton floral print Dress</a></li>
+                         <li><a href="">$40.00</a></li>
+                        </ul>
+                 </div>
+                </div>
+               
+                <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img id="product10-men" onmouseout="HandleMouseOut10('men')" onmouseover="HandleMouseOver10('men')" src="../shopper-templete/shoperimg/product-10.jpg" class="card-img-top" alt="">  
+                     
+                 </div>
+                 <div class="card-body">
+                     <ul class="All-top-seller">
+                         <li><a href="">Dresses</a></li>
+                         <li><a href="">Cotton floral print Dress</a></li>
+                         <li><a href="">$40.00</a></li>
+                        </ul>
+                 </div>
+                </div>
+         
+                <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img id="product11-men" onmouseout="HandleMouseOut11('men')" onmouseover="HandleMouseOver11('men')" src="../shopper-templete/shoperimg/product-11.jpg" class="card-img-top" alt=""> 
+                     
+                 </div>
+                 <div class="card-body">
+                     <ul class="All-top-seller">
+                         <li><a href="">Dresses</a></li>
+                         <li><a href="">Cotton floral print Dress</a></li>
+                         <li><a href="">$40.00</a></li>
+                        </ul>
+                 </div>
+                </div>
+         
+                <div class="col-6 col-md-6 col-lg-3">
+                 <div class="card-img">
+                     <img  src="../shopper-templete/shoperimg/product-12.jpg" class="card-img-top" alt="">   
+                 </div>
+                 <div class="card-body">
+                     <ul class="All-top-seller">
+                         <li><a href="">Dresses</a></li>
+                         <li><a href="">Cotton floral print Dress</a></li>
+                         <li><a href="">$40.00</a></li>
+                        </ul>
+                 </div>
+                </div>
+            </div>
+         </div>
+        <div class="tab-pane"id="kid">
+            <div class="tab-pane"id="kid">
+                <div class="row">
+                 <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img id="product5-kids" onmouseout="HandleMouseOut('kids')" onmouseover="HandleMouseOver('kids')" src="../shopper-templete/shoperimg/product-5.jpg" class="card-img-top" alt=""> 
+     
+                        
+                     </div>
+                     <div class="card-body">
+                         <ul class="All-top-seller">
+                             <li><a class="text-secondary" href="">Shoes</a></li>
+                             <li><a href="">Cotton floral print Dress</a></li>
+                             <li><a class="text-secondary" href="">$40.00</a></li>
+                            </ul>
+                           
+                     </div>
+                    </div>
+             
+                    <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img id="product6-kids" onmouseout="HandleMouseOut1('kids')" onmouseover="HandleMouseOver1('kids')" src="../shopper-templete/shoperimg/product-6.jpg" class="card-img-top" alt="">   
+                         
+                     </div>
+                     <div class="card-body">
+                         <ul class="All-top-seller">
+                             <li><a href="">Dresses</a></li>
+                             <li><a href="">Cotton floral print Dress</a></li>
+                             <li><a href="">$40.00</a></li>
+                            </ul>
+                     </div>
+                    </div>
+             
+                    <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img id="product7-kids" onmouseout="HandleMouseOut2('kids')" onmouseover="HandleMouseOver2('kids')" src="../shopper-templete/shoperimg/product-7.jpg" class="card-img-top" alt=""> 
+                         
+                     </div>
+                     <div class="card-body">
+                        <ul class="All-top-seller">
+                         <li><a href="">Shoes</a></li>
+                         <li><a href="">
+                             Leather Sneakers</a></li>
+                         <li><a href="">$85.00 $85.00</a></li>
+                        </ul>
+                     </div>
+                    </div>
+             
+                    <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img src="../shopper-templete/shoperimg/product-8.jpg" class="card-img-top" alt="">   
+                     </div>
+                     <div class="card-body">
+                         <ul class="All-top-seller">
+                             <li><a href="">Dresses</a></li>
+                             <li><a href="">Cotton floral print Dress</a></li>
+                             <li><a href="">$40.00</a></li>
+                            </ul>
+                     </div>
+                    </div>
+             
+                    <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img src="../shopper-templete/shoperimg/product-9.jpg" class="card-img-top" alt="">   
+                     </div>
+                     <div class="card-body">
+                         <ul class="All-top-seller">
+                             <li><a href="">Dresses</a></li>
+                             <li><a href="">Cotton floral print Dress</a></li>
+                             <li><a href="">$40.00</a></li>
+                            </ul>
+                     </div>
+                    </div>
+                   
+                    <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img id="product10-kids" onmouseout="HandleMouseOut10('kids')" onmouseover="HandleMouseOver10('kids')" src="../shopper-templete/shoperimg/product-10.jpg" class="card-img-top" alt="">  
+                         
+                     </div>
+                     <div class="card-body">
+                         <ul class="All-top-seller">
+                             <li><a href="">Dresses</a></li>
+                             <li><a href="">Cotton floral print Dress</a></li>
+                             <li><a href="">$40.00</a></li>
+                            </ul>
+                     </div>
+                    </div>
+             
+                    <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img id="product11-kids" onmouseout="HandleMouseOut11('kids')" onmouseover="HandleMouseOver11('kids')" src="../shopper-templete/shoperimg/product-11.jpg" class="card-img-top" alt=""> 
+                         
+                     </div>
+                     <div class="card-body">
+                         <ul class="All-top-seller">
+                             <li><a href="">Dresses</a></li>
+                             <li><a href="">Cotton floral print Dress</a></li>
+                             <li><a href="">$40.00</a></li>
+                            </ul>
+                     </div>
+                    </div>
+             
+                    <div class="col-6 col-md-6 col-lg-3">
+                     <div class="card-img">
+                         <img  src="../shopper-templete/shoperimg/product-12.jpg" class="card-img-top" alt="">   
+                     </div>
+                     <div class="card-body">
+                         <ul class="All-top-seller">
+                             <li><a href="">Dresses</a></li>
+                             <li><a href="">Cotton floral print Dress</a></li>
+                             <li><a href="">$40.00</a></li>
+                            </ul>
+                     </div>
+                    </div>
+                </div>
+             </div>
        </div>
     </main>  
 </body>
