@@ -65,6 +65,36 @@
             var product11= document.getElementById(ProductId);
            product11.src="../shopper-templete/shoperimg/product-11.jpg";
         }
+
+        function bodyLoad(){
+            setInterval(timer,1000)
+        }
+        var day=293;
+            var hours=18;
+            var minutes=20;
+            var seconds = 60;
+        function timer(){
+            seconds--;
+            if(seconds===0){
+                seconds=60;
+                minutes--
+              
+            }
+            if(minutes===0){
+                minutes=60;
+                hours--
+            }
+            if(hours===0){
+                hours=24;
+                day--
+            }
+            document.getElementById("day").innerHTML=`${day} :`;
+            document.getElementById("hours").innerHTML=`${hours} :`;
+            document.getElementById("minutes").innerHTML=`${minutes} :`;
+            document.getElementById("seconds").innerHTML=`${seconds} `;
+        }
+
+       
     </script>
     <style>
          body{
@@ -121,54 +151,46 @@
            
            list-style: none;
        }
-       .product1{
-        background-image: url(../project/shoperimg/product-5.jpg);
-        width: 100%;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-       }
-
+      
        .All-top-seller a{
         text-decoration:none;
         color:black;
         font-family: arial;
        }
+       .decover{
+        width: 20vw;
+        margin: auto;
+       display: flex;
+       justify-content: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 5px;
+       }
+       .Timer-cover{
+        margin-top: 6vw;
+        width: 100%;
+        height: 550px;
+        background-image: url(../shopper-templete/shoperimg/cover-4\ \(1\).jpg);
+         background-position: center; 
+        background-size: cover;
+       }
+       .offerTimer{
+        margin-left:30vw ;
+       }
+       .timerShop{
+        margin-top: 4vw;
+        margin-left: 19vw;
+       }
+       .timercolor{
+        color:rgba(239, 102, 4, 0.852); 
+       }
 
-       .shoes-parent{
-position: relative;
-       }
-       .shoes-child{
-        position: absolute;
-        top: -44px;
-        left: 44px;
-        background-color: white;
-        padding: 5px 5px;
-        border-radius: 50%;
-       }
 
-       .shoes-childs{
-        position: absolute;
-        top: -44px;
-        left: 89px;
-        background-color: white;
-        padding: 5px 5px;
-        border-radius: 50%;
-       }
-
-       .shoes-childss{
-        position: absolute;
-        top: -44px;
-        left: 144px;
-        background-color: white;
-        padding: 5px 5px;
-        border-radius: 50%;
-       }
+       
 
 
     </style>
 </head>
-<body>
+<body onload="bodyLoad()">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light  mb-3">
         <div>
@@ -690,6 +712,24 @@ position: relative;
                     </div>
                 </div>
              </div>
+
+            </div>
+            <div class="decover mt-4">Decover more</div>
+         </div>
+         <div class="Timer-cover d-flex flex-column justify-content-center align-items-center ">
+             
+                <div class="offerTimer">
+                 <h3 class="fw-bold">Get -50% from <br>
+                     Summer Collection</h3>
+                    <div class="d-flex mt-4 ">
+                     <span><div class="fs-1 fw-bold timercolor" id="day"></div>Days</span>
+                     <span class="mx-4"><div class="fs-1 fw-bold timercolor"  id="hours"></div >Hours</span>
+                     <span><div class="fs-1 fw-bold timercolor"  id="minutes"></div>MInutes</span>
+                     <span class="mx-4 "><div class="fs-1 fw-bold timercolor"  id="seconds"></div>Seconnds</span>
+                    </div>  
+                </div>
+                <a  class="text-decoration-none text-light bg-dark px-5 py-3 timerShop " href="">Shop Now <span class="bi bi-arrow-right ms-2"></span></a>
+         </div>
        </div>
     </main>  
 </body>
