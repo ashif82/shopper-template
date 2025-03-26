@@ -182,7 +182,43 @@
        .timercolor{
         color:rgba(239, 102, 4, 0.852); 
        }
+       #footer{
+        margin-top: 5vw;
+        width: 100%;
+        background-color: rgb(44, 40, 40);
+        background-size: cover;
+        
+       }
+       .Treats{
+        padding-top: 8vw;
+       }
+    
+       .footer-input{
+        background-color:rgb(18, 1, 1);
+        color: white;
+        margin-right: 2vw;
+        width: 30%;
+        
+       }
       
+       .footer-support p{
+        font-weight: bold;
+        font-family:arial;
+        margin-top: 2vh;
+       }
+       .footer-support li{
+        list-style:none;
+       }
+       .footer-support li a{
+        text-decoration:none;
+        color:rgb(194, 188, 188)
+       }
+
+       .footer-border{
+        border-top:1px solid rgb(127, 124, 124);
+        padding-top: 2vw;
+        
+       }
     </style>
 </head>
 <body onload="bodyLoad()">
@@ -845,5 +881,77 @@
             </div>
        </div>
     </main>  
+
+    <footer id="footer" class="text-white">
+        <div  class="w-75 mx-auto ">
+           <div class="Treats ">
+            <p class="text-light text-center fw-bold fs-5">Want style Ideas and Treats?</p>
+            <div class="d-flex justify-content-center">
+                <input class="footer-input " placeholder="Enter Email" type="email"> <button class="bg-secondary py-3 px-5">Subscribe</button>
+            </div>
+           </div> 
+    
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-2">
+                    <div class="fs-3 mt-3">Shopper</div>
+                    <div class="mt-2">
+                        <span class="bi bi-facebook "></span>
+                        <span class="bi bi-youtube mx-2"></span>
+                        <span class="bi bi-twitter"></span>
+                        <span class="bi bi-telegram mx-2"></span>
+                        <span class="bi bi-medium"></span>
+                    </div>
+                </div>
+     
+                
+                <div class="col-6 col-sm-3 col-lg-2 ">
+                    <ul class="footer-support"> 
+                        <P>Support</P>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Size Guide</a></li>
+                        <li><a href="">Shipping & Returns</a></li>
+                     
+                    </ul>
+                </div>
+    
+                <div class="col-6 col-sm-3 col-lg-2 ">
+                    <ul class="footer-support"> 
+                        <P>Shop</P>
+                        <li><a href="">Men's Shopping</a></li>
+                        <li><a href="">Women's Shopping</a></li>
+                        <li><a href="">Kids' Shopping</a></li>
+                        <li><a href="">Discounts</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-6 col-sm-3 col-lg-2 ">
+                    <ul class="footer-support"> 
+                        <P>Company</P>
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy & Cookie policy</a></li>
+                        
+                    </ul>
+                </div>
+    
+                <div class="col-6 col-sm-3 col-lg-2 ">
+                    <ul class="footer-support"> 
+                        <P>Contact</P>
+                        <li><a href="">1-202-555-0105</a></li>
+                        <li><a href="">1-202-555-0106</a></li>
+                        <li><a href="">help@shopper.com</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+           </div>
+           
+        </div>
+        <div class="d-flex justify-content-around footer-border">
+                <div>© 2019 All rights reserved. Designed by Unvab.</div>
+        </div>
+      </footer>
 </body>
 </html> 
